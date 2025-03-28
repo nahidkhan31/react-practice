@@ -10,7 +10,7 @@ const Country = ({ country }) => {
   };
 
   return (
-    <div className="country">
+    <div className={`country ${visited && "country-visited"}`}>
       <div className="flex">
         <div>
           <h3>Name: {country.name.common}</h3>
